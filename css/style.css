@@ -1,0 +1,376 @@
+/* 
+colors:
+#74CCFF - light blue
+#CDDF5A - green
+#1793D9 - dark blue
+#CFBDA1 - brown
+*/
+body{
+    margin:0;
+}
+/* ---------------------HEADER SECTION------------------*/
+    nav{
+        background-color:#CFBDA1 ;
+    }
+    nav:after{
+        content: '';
+        display:block;
+        clear:both;
+    }
+    .logo, .menu{
+        display: inline-block;  
+    }
+    .logo{
+        margin: 20px;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .menu{
+    
+        float: right;
+        margin: 20px;
+    }
+    .menu ul{
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
+    .menu ul li{
+        display:inline-block;
+        margin-right: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .menu ul li a{
+        text-decoration: none;
+        padding: 20px 10px 20px 10px;
+        color: black;
+    }
+    .menu ul li a:hover{
+        background-color:#1793D9;
+        color: white;
+        transition: all 0.5s ease;
+    }
+
+    /*----------------------HERO IMAGE SECTION--------------------*/
+    
+
+    .hero-container{    
+        display:flex;
+        flex-direction: row;  
+        padding:5%;   
+    }
+    .row{
+        flex:33.33%;
+       
+        width:100%;
+    }
+
+    .heroImg img{
+        width: 100%;
+    }
+
+    .button-work, .button-contact{
+        text-decoration: none;
+        border-radius: 20px;
+        font-weight: bold;
+        color: black;
+        padding: 10px 25px;  
+        display:inline-block; 
+        margin: 15px 10px;  
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .row p {
+        text-align:center;
+    }
+    .button-work{
+        background-color:#CDDF5A ;     
+    } 
+    .button-work:hover{
+        background-color: black;
+        color: #CDDF5A;
+        transition: all 0.5 ease;
+    }
+    .button-contact{
+        background-color: #74CCFF;  
+    }
+    .button-contact:hover{
+        background-color: black;
+        color: #74CCFF;
+        transition: all 0.5 ease;
+    }
+    .hero-container p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: oblique;
+    }
+    .hero-container h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+     /*----------------------ABOUT ME SECTION--------------------*/
+     .about-me{
+         width:100%;
+         text-align: center;
+         padding-top: 70px;
+         padding-bottom:70px;
+     }
+     .about-me p{
+         text-align:center;
+         padding:5%;
+         font-family: Arial, Helvetica, sans-serif;
+       
+     }
+        
+     .about-me .col-right p {
+         font-weight: 200;
+     }
+     .about-me h2{
+         text-align: center;
+         text-transform: uppercase;
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         position: relative;
+         padding: 1%;
+         margin-bottom:30px;
+     }
+     .about-me h4{
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     }
+     .about-me .col-left, .about-me .col-right{
+         width:50%;
+         float: left;
+     }
+     .about-me h2:after{
+         content: '';
+         position:absolute;
+         width: 80px;
+         height:2px;
+         margin-left: -40px;
+         left: 50%;
+         bottom: 0px;
+         background-color: #CDDF5A;
+     }
+     
+     .about-me:after{
+         content:"";
+         display: block;
+         clear:both;
+     }
+     .about-me .col-left img{
+         max-width:100%;
+     }
+     .about-me a {
+         background-color: #CDDF5A;
+         color:black;
+         text-decoration: none;
+         padding: 10px 25px;
+         border-radius: 20px;
+         display: inline-block;
+         border: 1px solid #CDDF5A;
+         font-family: Arial, Helvetica, sans-serif;
+     }
+     .about-me a:hover {
+         background-color: black;
+         color:#CDDF5A
+         
+     }
+
+      /*----------------------SKILLS SECTION--------------------*/
+      .my-skills{
+          background-color: #CFBDA1;
+          padding-top:70px;
+          padding-bottom: 70px;
+          text-align: center;
+      }
+      .my-skills h2{
+          text-transform: uppercase;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          position: relative;
+      }
+      .my-skills:after{
+          content:'';
+          display:block;
+          clear:both;
+      }
+      .my-skills .ui-left, .my-skills .ux-center, .my-skills .web-right{
+          width: 33.333%;
+          display: inline-block;
+          float: left;
+          
+      }
+      .my-skills h2:after{
+        content: '';
+        position:absolute;
+        width: 80px;
+        height:2px;
+        margin-left: -40px;
+        left: 50%;
+        bottom: 0px;
+        background-color:#1793D9
+    }
+    .my-skills i{
+        color:#1793D9;
+        font-size: 60px;
+    }
+    .my-skills h4{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .my-skills p{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /*----------------------PPROJECTS SECTION--------------------*/
+
+    .my-projects{
+        background-color: white;
+        padding-top:70px;
+        padding-bottom: 70px;
+        text-align: center;      
+    }
+
+    .my-projects h2{
+        text-transform: uppercase;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding-top: 50px;
+        padding-bottom: 10px;
+        margin-top:0;
+        position: relative;
+    }
+    .my-projects:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .my-projects h2:after{
+        content: '';
+        position:absolute;
+        width: 80px;
+        height:2px;
+        margin-left: -40px;
+        left: 50%;
+        bottom: 0px;
+        background-color:#1793D9
+    }
+
+    .my-projects .project1,.my-projects .project2,.my-projects .project3{
+        height:300px;
+        width: 30%;
+        float: left;
+       overflow: hidden;
+        position:relative;      
+    }
+
+    .my-projects .project1{
+        margin-left: 2%;
+        margin-right: 1.5%      
+    }
+    .my-projects .project2{
+        margin-left: 1%;
+        margin-right: 1%
+    }
+    .my-projects .project3{
+        margin-left: 1.5%;
+        margin-right: 2%
+    }
+    .my-projects .project1 img{
+       width:100%;
+       height: 120%;
+    }
+    
+    .my-projects .project2 img{
+        width:100%;
+        height: 120%;
+     }
+    
+     .my-projects .project3 img{
+        width:100%;
+        height: 130%;
+     }
+     
+     .my-projects .overlay{
+         width: 100%;
+         height: 100%;
+         position: absolute;     
+         padding-top: 310px;
+     }
+
+     .my-projects .overlay:hover{
+        background-color: rgba(0,0,0,0.3);
+        padding:10px;
+        transition:all 0.5s ease;
+    }
+     .overlay a{
+         display: inline-block;
+         font-size: 18px;
+         padding: 10px 20px;
+         border: 1px solid #fff;
+         text-decoration: none;
+         color: #fff;
+         font-weight: bold;
+         font-family: Arial, Helvetica, sans-serif;   
+     }
+     /*-----------------footer section--------------*/
+     footer{
+        background-color:#CFBDA1 ;
+    }
+    footer:after{
+        content: '';
+        display:block;
+        clear:both;
+    }
+   
+    .footer{
+        padding:5%;
+        text-align: center;    
+    }
+    .footer ul{
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+        text-align:center;
+    }
+    .footer ul li{
+        display:inline-block;
+        text-align:center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .footer ul li a{
+        text-decoration: none;
+        padding: 70px 10px 70px 10px;
+        color: black;
+    }
+    .footer ul li a:hover{
+        background-color:#1793D9;
+        color: white;
+        transition: all 0.5s ease;
+    }
+     
+    /*--------------------------Media Query--------------------------*/
+    @media only screen and (max-width:600px){
+        .hero-container{    
+            display:flex;
+            flex-direction: column;     
+        }
+        .heroImg img{
+            display:none;
+        }
+        .logo{
+            margin-left:120px;
+        }
+        .about-me .col-left, .about-me .col-right{
+            display:flex;
+            flex-direction:column;
+            float:none;
+            width:100%;
+        }
+        .button-work, .button-contact{
+            display:block;
+            text-align:center;
+        }
+        .my-skills .ui-left, .my-skills .ux-center, .my-skills .web-right{
+            width:100%;
+            
+        }
+        .my-projects .project1,.my-projects .project2,.my-projects .project3{
+            width:100%;
+        }
+
+      }
